@@ -1070,6 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8235d46706eb42ab10a976818641fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScrollTime: 0.0125
   NameText: {fileID: 1334525816}
   DialogueText: {fileID: 1503554549}
 --- !u!1 &1524305766

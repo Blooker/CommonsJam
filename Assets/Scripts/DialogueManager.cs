@@ -40,9 +40,8 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-        DisplayNextSentence();
-        
         UI.Show();
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
