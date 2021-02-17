@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Test_DialogueStart
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: Test Guy
+    Lines:
+    - Hi, I'm Test Guy, and I'm here to demonstrate how the dialogue system works!
+    - I have nice scrolling text and the box transitions in and out.
+    - There's even a little bouncing arrow to indicate that you can continue onto
+      the next bit of dialogue!
+    - If you click the dialogue box while the text is scrolling, it will automatically
+      skip to the end. Neat!
+    - Bye now!
+  NextChoice: {fileID: 0}
+  NextDialogue: {fileID: 0}

@@ -10,8 +10,11 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
 
     [SerializeField] private DialogueBoxUI UI;
+
+    private Dialogue Dialogue;
     
-    private Queue<string> sentences;
+    private int PartIndex;
+    private int LineIndex;
 
     private void Awake()
     {
@@ -21,24 +24,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        sentences = new Queue<string>();
-    }
-
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log($"Starting conversation with {dialogue.Name}");
-        UI.SetName(dialogue.Name);
+        Dialogue = dialogue;
         
-        sentences.Clear();
-
-        for (var index = 0; index < dialogue.Sentences.Length; index++)
-        {
-            var sentence = dialogue.Sentences[index];
-            sentences.Enqueue(sentence);
-        }
+        PartIndex = 0;
+        LineIndex = 0;
 
         UI.Show();
         DisplayNextSentence();
@@ -58,14 +49,25 @@ public class DialogueManager : MonoBehaviour
     
     private void DisplayNextSentence()
     {
-        if (sentences.Count <= 0)
+        if (LineIndex >= Dialogue.Parts[PartIndex].Lines.Length)
+        {
+            LineIndex = 0;
+            PartIndex++;
+        }
+        
+        if (PartIndex >= Dialogue.Parts.Length)
         {
             EndDialogue();
             return;
         }
 
-        var sentence = sentences.Dequeue();
-        UI.SetDialogue(sentence);
+        var part = Dialogue.Parts[PartIndex];
+        var line = part.Lines[LineIndex];
+        
+        UI.SetName(part.Name);
+        UI.SetDialogue(line);
+
+        LineIndex++;
     }
 
     void EndDialogue()

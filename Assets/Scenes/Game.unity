@@ -1395,16 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80012502830701f5080d40c9fa5ab068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogue:
-    Name: Test Guy
-    Sentences:
-    - Hi, I'm Test Guy, and I'm here to demonstrate how the dialogue system works!
-    - I have nice scrolling text and the box transitions in and out.
-    - There's even a little bouncing arrow to indicate that you can continue onto
-      the next bit of dialogue!
-    - If you click the dialogue box while the text is scrolling, it will automatically
-      skip to the end. Neat!
-    - Bye now!
+  Dialogue: {fileID: 11400000, guid: 3e820c0da6becec4b9682aaf55147d48, type: 2}
 --- !u!1 &2133075867
 GameObject:
   m_ObjectHideFlags: 0
