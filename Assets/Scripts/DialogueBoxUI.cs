@@ -3,28 +3,66 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DialogueBoxUI : MonoBehaviour
 {
+    [Header("Box")]
+    [SerializeField] private RectTransform BoxShowPos;
+    [SerializeField] private RectTransform BoxHidePos;
+    [FormerlySerializedAs("BoxTweenTime")] [SerializeField] private float BoxTweenInTime;
+    [SerializeField] private float BoxTweenOutTime;
+    
+    [Header("Text")]
     [SerializeField] private float ScrollTime;
     [SerializeField] private TMP_Text NameText;
     [SerializeField] private TMP_Text DialogueText;
-
-    private bool ScrollSkipped;
     
+    [Header("Indicator")]
+    [SerializeField] private RectTransform Indicator;
+    [SerializeField] private float IndicatorTweenY = -0.4f;
+    [SerializeField] private float IndicatorTweenTime = 0.3f;
+
+    private Vector3 IndicatorStartPos;
+    
+    private int BoxTweenID;
+    private int IndicatorTweenID;
+    
+    public bool IsScrolling { get; private set; }
+
+    private void Awake()
+    {
+        IndicatorStartPos = Indicator.anchoredPosition;
+    }
+
     private void Start()
     {
-        Hide();
+        gameObject.SetActive(false);
     }
 
     public void Show()
     {
+        var rect = transform as RectTransform;
+
+        rect.anchoredPosition = BoxHidePos.anchoredPosition;
         gameObject.SetActive(true);
+        
+        LeanTween.cancel(BoxTweenID);
+        BoxTweenID = LeanTween.move(rect, BoxShowPos.anchoredPosition, BoxTweenInTime).setEaseOutQuart().id;
     }
     
     public void Hide()
     {
-        gameObject.SetActive(false);
+        var rect = transform as RectTransform;
+        rect.anchoredPosition = BoxShowPos.anchoredPosition;
+
+        LeanTween.cancel(BoxTweenID);
+        BoxTweenID = LeanTween.move(rect, BoxHidePos.anchoredPosition, BoxTweenOutTime).setEaseInQuart().id;
+    }
+
+    public void SkipScroll()
+    {
+        IsScrolling = false;
     }
     
     public void SetName(string name)
@@ -34,11 +72,27 @@ public class DialogueBoxUI : MonoBehaviour
 
     public void SetDialogue(string sentence)
     {
+        HideIndicator();
         StartCoroutine(TypeSentence(sentence));
     }
 
+    private void ShowIndicator()
+    {
+        Indicator.anchoredPosition = IndicatorStartPos;
+        IndicatorTweenID = LeanTween.moveY(Indicator, IndicatorTweenY, IndicatorTweenTime).setEaseInQuart().setLoopPingPong().id;
+        Indicator.gameObject.SetActive(true);
+    }
+
+    private void HideIndicator()
+    {
+        LeanTween.cancel(IndicatorTweenID);
+        Indicator.gameObject.SetActive(false);
+    }
+    
     IEnumerator TypeSentence(string sentence)
     {
+        IsScrolling = true;
+        
         if (ScrollTime > 0)
         {
             DialogueText.text = "";
@@ -50,6 +104,11 @@ public class DialogueBoxUI : MonoBehaviour
 
             while (i < chars.Length)
             {
+                if (!IsScrolling)
+                {
+                    break;
+                }
+                
                 // Work out how many characters should be typed since the last frame
                 charPos += Time.deltaTime / ScrollTime;
                 
@@ -71,5 +130,8 @@ public class DialogueBoxUI : MonoBehaviour
         }
         
         DialogueText.text = sentence;
+        IsScrolling = false;
+
+        ShowIndicator();
     }
 }

@@ -44,7 +44,19 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-    public void DisplayNextSentence()
+    public void NextPressed()
+    {
+        if (UI.IsScrolling)
+        {
+            UI.SkipScroll();
+        }
+        else
+        {
+            DisplayNextSentence();
+        }
+    }
+    
+    private void DisplayNextSentence()
     {
         if (sentences.Count <= 0)
         {
