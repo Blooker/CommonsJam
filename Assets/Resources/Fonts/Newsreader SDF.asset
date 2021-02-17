@@ -112,11 +112,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Newsreader-VariableFont_opsz,wght SDF
+  m_Name: Newsreader SDF
   m_EditorClassIdentifier: 
-  hashCode: -1732441462
+  hashCode: 315076539
   material: {fileID: -6256287913395321810}
-  materialHashCode: -2141224726
+  materialHashCode: -1689794373
   m_Version: 1.1.0
   m_SourceFontFileGUID: f28a1bcbf01020e85be4db2eedff2621
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: f28a1bcbf01020e85be4db2eedff2621,
