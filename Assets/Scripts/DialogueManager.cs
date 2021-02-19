@@ -4,13 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    [SerializeField] private DialogueBoxUI UI;
-
+    [SerializeField] private DialogueBoxUI BoxUI;
+    [SerializeField] private DialogueChoiceUI ChoiceUI;
+    
+    
     private Dialogue Dialogue;
     
     private int PartIndex;
@@ -31,15 +34,15 @@ public class DialogueManager : MonoBehaviour
         PartIndex = 0;
         LineIndex = 0;
 
-        UI.Show();
+        BoxUI.Show();
         DisplayNextSentence();
     }
 
     public void NextPressed()
     {
-        if (UI.IsScrolling)
+        if (BoxUI.IsScrolling)
         {
-            UI.SkipScroll();
+            BoxUI.SkipScroll();
         }
         else
         {
@@ -64,8 +67,8 @@ public class DialogueManager : MonoBehaviour
         var part = Dialogue.Parts[PartIndex];
         var line = part.Lines[LineIndex];
         
-        UI.SetName(part.Name);
-        UI.SetDialogue(line);
+        BoxUI.SetName(part.Name);
+        BoxUI.SetDialogue(line);
 
         LineIndex++;
     }
@@ -73,6 +76,17 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Debug.Log("End of conversation");
-        UI.Hide();
+
+        if (Dialogue.NextChoice != null)
+        {
+            ChoiceUI.SetOptions(Dialogue.NextChoice.Options);
+        }
+        else if (Dialogue.NextDialogue != null)
+        {
+            StartDialogue(Dialogue.NextDialogue);
+            return;
+        }
+        
+        BoxUI.Hide();
     }
 }
