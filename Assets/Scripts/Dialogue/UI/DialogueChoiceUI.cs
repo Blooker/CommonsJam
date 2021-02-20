@@ -36,6 +36,7 @@ public class DialogueChoiceUI : MonoBehaviour
     
     public void Select(DialogueOption option)
     {
+        ScoreManager.Instance.Add(option.ResultPoints);
         Dialogue.StartDialogue(option.ResultDialogue);
         FadeOut();
     }

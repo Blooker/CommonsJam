@@ -15,5 +15,7 @@ public class DialogueOption
 {
     [TextArea(3, 10)]
     public string Text;
+    
     public Dialogue ResultDialogue;
+    public int ResultPoints;
 }

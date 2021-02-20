@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Test_Choice1
   m_EditorClassIdentifier: 
   Options:
-  - Text: Rest Guy
-    ResultDialogue: {fileID: 11400000, guid: 35eb33669785d3c55b3e8e2a86f91253, type: 2}
-  - Text: Nest Guy
-    ResultDialogue: {fileID: 11400000, guid: 35eb33669785d3c55b3e8e2a86f91253, type: 2}
-  - Text: Test Guy
+  - Text: 19
     ResultDialogue: {fileID: 11400000, guid: 9a88c229566c701cd87405591cc89150, type: 2}
+    ResultPoints: 3
+  - Text: 21
+    ResultDialogue: {fileID: 11400000, guid: 35eb33669785d3c55b3e8e2a86f91253, type: 2}
+    ResultPoints: -5
+  - Text: 17
+    ResultDialogue: {fileID: 11400000, guid: 35eb33669785d3c55b3e8e2a86f91253, type: 2}
+    ResultPoints: -5
