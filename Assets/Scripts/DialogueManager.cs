@@ -79,7 +79,7 @@ public class DialogueManager : MonoBehaviour
 
         if (Dialogue.NextChoice != null)
         {
-            ChoiceUI.SetOptions(Dialogue.NextChoice.Options);
+            ChoiceUI.Show(Dialogue.NextChoice.Options);
         }
         else if (Dialogue.NextDialogue != null)
         {

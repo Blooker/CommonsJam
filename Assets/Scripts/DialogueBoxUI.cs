@@ -23,6 +23,8 @@ public class DialogueBoxUI : MonoBehaviour
     [SerializeField] private float IndicatorTweenY = -0.4f;
     [SerializeField] private float IndicatorTweenTime = 0.3f;
 
+    private RectTransform Rect;
+    
     private Vector3 IndicatorStartPos;
     
     private int BoxTweenID;
@@ -37,27 +39,25 @@ public class DialogueBoxUI : MonoBehaviour
 
     private void Start()
     {
+        Rect = transform as RectTransform;
         gameObject.SetActive(false);
     }
 
     public void Show()
     {
-        var rect = transform as RectTransform;
-
-        rect.anchoredPosition = BoxHidePos.anchoredPosition;
+        Rect.anchoredPosition = BoxHidePos.anchoredPosition;
         gameObject.SetActive(true);
         
         LeanTween.cancel(BoxTweenID);
-        BoxTweenID = LeanTween.move(rect, BoxShowPos.anchoredPosition, BoxTweenInTime).setEaseOutQuart().id;
+        BoxTweenID = LeanTween.move(Rect, BoxShowPos.anchoredPosition, BoxTweenInTime).setEaseOutQuart().id;
     }
     
     public void Hide()
     {
-        var rect = transform as RectTransform;
-        rect.anchoredPosition = BoxShowPos.anchoredPosition;
+        Rect.anchoredPosition = BoxShowPos.anchoredPosition;
 
         LeanTween.cancel(BoxTweenID);
-        BoxTweenID = LeanTween.move(rect, BoxHidePos.anchoredPosition, BoxTweenOutTime).setEaseInQuart().id;
+        BoxTweenID = LeanTween.move(Rect, BoxHidePos.anchoredPosition, BoxTweenOutTime).setEaseInQuart().id;
     }
 
     public void SkipScroll()
