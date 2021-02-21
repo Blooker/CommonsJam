@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
-  m_Name: Test_Dialogue_C1_Correct
+  m_Name: Scene2_Op1_Result
   m_EditorClassIdentifier: 
-  Parts:
-  - Name: Test Guy
-    Text: Correct! Good on ya pal!
-    Lines:
-    - Correct! Good on ya pal!
+  Parts: []
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
-  m_Name: Test_Dialogue_C1_Incorrect
+  m_Name: Scene2_Default_Result
   m_EditorClassIdentifier: 
   Parts:
-  - Name: Test Guy
-    Text: Wow! You're wrong dummy!
+  - Name: John
     Lines:
-    - Wow! You're wrong dummy!
+    - Text: "We\u2019ll soon know, won\u2019t we. Onwards and upwards!"
+      ArtIndex: -1
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}

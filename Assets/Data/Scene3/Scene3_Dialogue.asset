@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Scene3_Dialogue
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: 
+    Lines:
+    - Text: "You walk to the park 5 mins away, and see two cranes in the sky next
+        to two new-builds which have \u201Cto let\u201D signs all over it."
+      ArtIndex: 0
+    - Text: "You think to yourself\u2026 \u201CIs supply the only problem here\u2026?\u201D"
+      ArtIndex: 1
+    - Text: "\u201C\u2026 hopefully these new builds will help somewhat...\u201D"
+      ArtIndex: -1
+  NextChoice: {fileID: 0}
+  NextDialogue: {fileID: 0}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Scene2_Dialogue1
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: 
+    Lines:
+    - Text: "The next morning you decide to look around the neighbourhood and pop
+        to the shops\u2026"
+      ArtIndex: 0
+    - Text: "You pass some people sleeping rough right beside the \u201Cto let\u201D
+        and \u201Cfor sale\u201D signs of a big tower block. You think about the
+        irony of it all..."
+      ArtIndex: 1
+    - Text: "You look up and notice\u2026"
+      ArtIndex: -1
+    - Text: "John is standing outside the supermarket. You walk over to say hi, but
+        a homeless person interrupts to ask you for money\u2026"
+      ArtIndex: 2
+    - Text: You give them some change, and continue on to your neighbour.
+      ArtIndex: -1
+    - Text: "As he makes some nothing-y comment on the weather, you notice his eyes
+        follow the homeless person you just gave your change to\u2026"
+      ArtIndex: -1
+  - Name: John
+    Lines:
+    - Text: Loads of homeless people around here lately, hopefully these new builds
+        will help somewhat...
+      ArtIndex: -1
+  NextChoice: {fileID: 11400000, guid: 6d60e7f0b171b9670a737a5cd443bee0, type: 2}
+  NextDialogue: {fileID: 0}
