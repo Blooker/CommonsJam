@@ -35,14 +35,9 @@ public class DialogueBoxUI : MonoBehaviour
     private void Awake()
     {
         IndicatorStartPos = Indicator.anchoredPosition;
-    }
-
-    private void Start()
-    {
         Rect = transform as RectTransform;
-        gameObject.SetActive(false);
     }
-
+    
     public void Show()
     {
         Rect.anchoredPosition = BoxHidePos.anchoredPosition;

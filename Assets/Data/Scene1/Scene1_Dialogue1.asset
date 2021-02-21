@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Scene1_Dialogue1
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: 
+    Lines:
+    - Hi! This is you. You are a 20-something year old, who has just started earning
+      enough money to rent in your hometown of London.
+    - Your neighbour, John, is a 30-something year old entrepreneur and budding property
+      developer. They come over to bring you a cake!
+  - Name: John
+    Lines:
+    - "Hey! Nice to meet you. I live next door and wanted to introduce myself. I\u2019m
+      John and have lived here for just over a year now."
+    - "The area has changed so much in that time, and I can\u2019t wait to see how
+      it continues to change!"
+    - "So\u2026 what made you move here?"
+  NextChoice: {fileID: 11400000, guid: 5d89333b7120abf24b77e2df96e428f7, type: 2}
+  NextDialogue: {fileID: 0}

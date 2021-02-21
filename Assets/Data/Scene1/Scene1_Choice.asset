@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b11aaff2891e19da81be96bca6b098, type: 3}
+  m_Name: Scene1_Choice
+  m_EditorClassIdentifier: 
+  Options:
+  - Text: Work.
+    ResultDialogue: {fileID: 11400000, guid: 75aeef92d2441e6b4a68262a80cbdb02, type: 2}
+    ResultPoints: 0
+  - Text: Well, I was brought up around here, and finally managed to find a place
+      to move out to that I could afford.
+    ResultDialogue: {fileID: 11400000, guid: 75aeef92d2441e6b4a68262a80cbdb02, type: 2}
+    ResultPoints: 2
+  - Text: Ended up on a night out here a few months ago, and fell in love with this
+      area. Just knew that this was where I wanted to be!
+    ResultDialogue: {fileID: 11400000, guid: 75aeef92d2441e6b4a68262a80cbdb02, type: 2}
+    ResultPoints: 2
+  - Text: "I was trying to move here for a while but there are so many people trying
+      to get a place. Took me a few months of getting rejected.. there just aren\u2019t
+      enough flats around here!"
+    ResultDialogue: {fileID: 11400000, guid: 75aeef92d2441e6b4a68262a80cbdb02, type: 2}
+    ResultPoints: 3
