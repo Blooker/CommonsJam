@@ -17,6 +17,13 @@ public class DialoguePart
 {
     public string Name;
 
+    [FormerlySerializedAs("Lines2")] public DialogueLine[] Lines;
+}
+
+[System.Serializable]
+public class DialogueLine
+{
     [TextArea(3, 10)]
-    public string[] Lines;
+    public string Text;
+    public int ArtIndex = -1;
 }

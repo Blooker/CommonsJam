@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Scene1_ChoiceResult
   m_EditorClassIdentifier: 
   Parts:
-  - Name: 
+  - Name: John
     Lines:
-    - Haha yeah, alright. Well, good to meet you. See ya around!
+    - Text: Haha yeah, alright. Well, good to meet you. See ya around!
+      ArtIndex: -1
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
