@@ -7,11 +7,12 @@ using UnityEngine.Serialization;
 
 public class DialogueBoxUI : MonoBehaviour
 {
+    [Header("Fonts")]
+    [SerializeField] private string NameFont;
+    
     [Header("Box")]
-    [SerializeField] private RectTransform BoxShowPos;
-    [SerializeField] private RectTransform BoxHidePos;
-    [FormerlySerializedAs("BoxTweenTime")] [SerializeField] private float BoxTweenInTime;
-    [SerializeField] private float BoxTweenOutTime;
+    [SerializeField] private CanvasGroup BoxGroup;
+    [SerializeField] private float BoxFadeTime;
     
     [Header("Text")]
     [SerializeField] private float ScrollTime;
@@ -22,8 +23,6 @@ public class DialogueBoxUI : MonoBehaviour
     [SerializeField] private RectTransform Indicator;
     [SerializeField] private float IndicatorTweenY = -0.4f;
     [SerializeField] private float IndicatorTweenTime = 0.3f;
-
-    private RectTransform Rect;
     
     private Vector3 IndicatorStartPos;
     
@@ -35,46 +34,45 @@ public class DialogueBoxUI : MonoBehaviour
     private void Awake()
     {
         IndicatorStartPos = Indicator.anchoredPosition;
-        Rect = transform as RectTransform;
     }
     
-    public void Show()
+    public void FadeIn()
     {
-        Rect.anchoredPosition = BoxHidePos.anchoredPosition;
         gameObject.SetActive(true);
         
         LeanTween.cancel(BoxTweenID);
-        BoxTweenID = LeanTween.move(Rect, BoxShowPos.anchoredPosition, BoxTweenInTime).setEaseOutQuart().id;
+        BoxTweenID = LeanTween.alphaCanvas(BoxGroup, 1, BoxFadeTime).setEaseOutQuart().id;
     }
     
-    public void Hide()
+    public void FadeOut()
     {
-        Rect.anchoredPosition = BoxShowPos.anchoredPosition;
-
         LeanTween.cancel(BoxTweenID);
-        BoxTweenID = LeanTween.move(Rect, BoxHidePos.anchoredPosition, BoxTweenOutTime).setEaseInQuart().id;
+        BoxTweenID = LeanTween.alphaCanvas(BoxGroup, 0, BoxFadeTime).setEaseInQuart().id;
     }
 
     public void SkipScroll()
     {
         IsScrolling = false;
     }
-    
-    public void SetName(string name)
-    {
-        NameText.text = name;
-    }
 
-    public void SetDialogue(string sentence)
+    public void SetDialogue(string name, string sentence)
     {
+        string nameString = "";
+        if (!string.IsNullOrEmpty(name))
+        {
+            nameString = $"<font=\"{NameFont}\">{name}: </font>";
+        }
+        
+        DialogueText.text = nameString;
+
         HideIndicator();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(nameString, sentence));
     }
 
     private void ShowIndicator()
     {
         Indicator.anchoredPosition = IndicatorStartPos;
-        IndicatorTweenID = LeanTween.moveY(Indicator, IndicatorTweenY, IndicatorTweenTime).setEaseInQuart().setLoopPingPong().id;
+        IndicatorTweenID = LeanTween.moveY(Indicator,  Indicator.anchoredPosition.y - IndicatorTweenY, IndicatorTweenTime).setEaseInQuart().setLoopPingPong().id;
         Indicator.gameObject.SetActive(true);
     }
 
@@ -84,14 +82,12 @@ public class DialogueBoxUI : MonoBehaviour
         Indicator.gameObject.SetActive(false);
     }
     
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string nameString, string sentence)
     {
         IsScrolling = true;
         
         if (ScrollTime > 0)
         {
-            DialogueText.text = "";
-    
             var chars = sentence.ToCharArray();
 
             int i = 0;
@@ -111,12 +107,25 @@ public class DialogueBoxUI : MonoBehaviour
                 int newI = (int)Mathf.Clamp(charPos, 0, chars.Length);
                 
                 // Add all letters between the old and new index to the string
-                for (int j = 0; j < newI - i; j++)
+                int j = 0;
+                while (j < newI - i)
                 {
-                    var letter = chars[i+j];
-                    DialogueText.text += letter;
+                    // If a font tag is detected, add it all in one go before continuing
+                    if (chars[i+j] == '<')
+                    {
+                        do
+                        {
+                            DialogueText.text += chars[i + j];
+                            i++;
+                            newI++;
+                            charPos++;
+                        } while (chars[i+j-1] != '>');
+                    }
+                    
+                    DialogueText.text += chars[i+j];
+                    j++;
                 }
-                
+
                 // Update old index
                 i = newI;
 
@@ -124,7 +133,7 @@ public class DialogueBoxUI : MonoBehaviour
             }
         }
         
-        DialogueText.text = sentence;
+        DialogueText.text = nameString + sentence;
         IsScrolling = false;
 
         ShowIndicator();

@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Scene1_Dialogue1
   m_EditorClassIdentifier: 
   Parts:
-  - Name: 
+  - Name: Whatup
     Lines:
-    - Hi! This is you. You are a 20-something year old, who has just started earning
-      enough money to rent in your hometown of London.
+    - Hi! This is <font="Spectral-LightItalic SDF">you</font>.
+    - You are a 20-something year old, who has just started earning enough money
+      to rent in your hometown of London
     - Your neighbour, John, is a 30-something year old entrepreneur and budding property
       developer. They come over to bring you a cake!
   - Name: John
     Lines:
     - "Hey! Nice to meet you. I live next door and wanted to introduce myself. I\u2019m
-      John and have lived here for just over a year now."
-    - "The area has changed so much in that time, and I can\u2019t wait to see how
-      it continues to change!"
+      John and have lived here for just over a year now. The area has changed so
+      much in that time, and I can\u2019t wait to see how it continues to!"
     - "So\u2026 what made you move here?"
   NextChoice: {fileID: 11400000, guid: 5d89333b7120abf24b77e2df96e428f7, type: 2}
   NextDialogue: {fileID: 0}

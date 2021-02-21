@@ -34,7 +34,7 @@ public class DialogueManager : MonoBehaviour
         PartIndex = 0;
         LineIndex = 0;
 
-        BoxUI.Show();
+        BoxUI.FadeIn();
         DisplayNextSentence();
     }
 
@@ -65,10 +65,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         var part = Dialogue.Parts[PartIndex];
-        var line = part.Lines[LineIndex];
-        
-        BoxUI.SetName(part.Name);
-        BoxUI.SetDialogue(line);
+        BoxUI.SetDialogue(part.Name, part.Lines[LineIndex]);
 
         LineIndex++;
     }
@@ -87,6 +84,6 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
-        BoxUI.Hide();
+        BoxUI.FadeOut();
     }
 }
