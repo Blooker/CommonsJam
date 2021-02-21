@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    [SerializeField] private DialogueBoxUI BoxUI;
+    [SerializeField] private DialogueBoxesUI BoxesUI;
     [SerializeField] private DialogueChoiceUI ChoiceUI;
     
     
@@ -34,23 +34,10 @@ public class DialogueManager : MonoBehaviour
         PartIndex = 0;
         LineIndex = 0;
 
-        BoxUI.FadeIn();
         DisplayNextSentence();
     }
 
-    public void NextPressed()
-    {
-        if (BoxUI.IsScrolling)
-        {
-            BoxUI.SkipScroll();
-        }
-        else
-        {
-            DisplayNextSentence();
-        }
-    }
-    
-    private void DisplayNextSentence()
+    public void DisplayNextSentence()
     {
         if (LineIndex >= Dialogue.Parts[PartIndex].Lines.Length)
         {
@@ -65,7 +52,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         var part = Dialogue.Parts[PartIndex];
-        BoxUI.SetDialogue(part.Name, part.Lines[LineIndex]);
+        BoxesUI.SetNextDialogue(LineIndex == 0 ? part.Name : "", part.Lines[LineIndex]);
 
         LineIndex++;
     }
@@ -83,7 +70,5 @@ public class DialogueManager : MonoBehaviour
             StartDialogue(Dialogue.NextDialogue);
             return;
         }
-        
-        BoxUI.FadeOut();
     }
 }

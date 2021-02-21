@@ -25,7 +25,7 @@ MonoBehaviour:
     ResultDialogue: {fileID: 11400000, guid: 75aeef92d2441e6b4a68262a80cbdb02, type: 2}
     ResultPoints: 2
   - Text: "I was trying to move here for a while but there are so many people trying
-      to get a place. Took me a few months of getting rejected.. there just aren\u2019t
+      to get a place. Took me a few months of getting rejected... There just aren\u2019t
       enough flats around here!"
     ResultDialogue: {fileID: 11400000, guid: 75aeef92d2441e6b4a68262a80cbdb02, type: 2}
     ResultPoints: 3

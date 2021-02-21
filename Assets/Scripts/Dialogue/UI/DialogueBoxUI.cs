@@ -35,6 +35,11 @@ public class DialogueBoxUI : MonoBehaviour
     {
         IndicatorStartPos = Indicator.anchoredPosition;
     }
+
+    private void Start()
+    {
+        BoxGroup.alpha = 0;
+    }
     
     public void FadeIn()
     {
@@ -76,7 +81,7 @@ public class DialogueBoxUI : MonoBehaviour
         Indicator.gameObject.SetActive(true);
     }
 
-    private void HideIndicator()
+    public void HideIndicator()
     {
         LeanTween.cancel(IndicatorTweenID);
         Indicator.gameObject.SetActive(false);

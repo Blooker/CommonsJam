@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Scene1_Dialogue1
   m_EditorClassIdentifier: 
   Parts:
-  - Name: Whatup
+  - Name: 
     Lines:
     - Hi! This is <font="Spectral-LightItalic SDF">you</font>.
     - You are a 20-something year old, who has just started earning enough money
-      to rent in your hometown of London
+      to rent in your hometown of London.
     - Your neighbour, John, is a 30-something year old entrepreneur and budding property
       developer. They come over to bring you a cake!
   - Name: John

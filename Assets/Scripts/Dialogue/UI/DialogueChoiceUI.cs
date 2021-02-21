@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueChoiceUI : MonoBehaviour
 {
     [SerializeField] private DialogueManager Dialogue;
     [SerializeField] private DialogueOptionUI[] OptionUIs;
     [SerializeField] private float BoxFadeTime;
+
+    [SerializeField] private Button ContinueButton;
     
     private int TweenID;
     private CanvasGroup Group;
@@ -17,8 +20,15 @@ public class DialogueChoiceUI : MonoBehaviour
         Group = GetComponent<CanvasGroup>();
     }
 
+    private void Start()
+    {
+        Group.alpha = 0;
+    }
+
     public void Show(DialogueOption[] options)
     {
+        ContinueButton.interactable = false;
+        
         for (int i = 0; i < OptionUIs.Length; i++)
         {
             if (i < options.Length)
@@ -38,6 +48,7 @@ public class DialogueChoiceUI : MonoBehaviour
     {
         ScoreManager.Instance.Add(option.ResultPoints);
         Dialogue.StartDialogue(option.ResultDialogue);
+        ContinueButton.interactable = true;
         FadeOut();
     }
     
