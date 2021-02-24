@@ -13,7 +13,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private DialogueUI UI;
     [SerializeField] private DialogueBoxesUI BoxesUI;
     [SerializeField] private DialogueChoiceUI ChoiceUI;
-    
+
+    [SerializeField] private SceneLoader SceneLoader;
     
     private Dialogue Dialogue;
     
@@ -65,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         LineIndex++;
     }
 
-    void EndDialogue()
+    private void EndDialogue()
     {
         Debug.Log("End of conversation");
 
@@ -79,7 +80,15 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            UI.FadeOutAll();
+            StartCoroutine(EndScene());
         }
+    }
+
+    private IEnumerator EndScene()
+    {
+        yield return UI.FadeOutAll();
+        yield return new WaitForSeconds(0.5f);
+        
+        SceneLoader.NextScene();
     }
 }

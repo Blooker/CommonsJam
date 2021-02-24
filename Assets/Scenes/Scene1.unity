@@ -1349,6 +1349,7 @@ MonoBehaviour:
   UI: {fileID: 1524305772}
   BoxesUI: {fileID: 1078046099}
   ChoiceUI: {fileID: 1841660675}
+  SceneLoader: {fileID: 11400000, guid: 7aabaf274d9fb421c8bd2369abc515fb, type: 2}
 --- !u!4 &1268100745
 Transform:
   m_ObjectHideFlags: 0

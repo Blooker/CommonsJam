@@ -7,9 +7,12 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private CanvasGroup CanvasGroup;
     [SerializeField] private float FadeTime;
 
-    public void FadeOutAll()
+    public IEnumerator FadeOutAll()
     {
-        CanvasGroup.interactable = false;
-        LeanTween.alphaCanvas(CanvasGroup, 0, FadeTime);
+        int id = LeanTween.alphaCanvas(CanvasGroup, 0, FadeTime).id;
+        while (LeanTween.isTweening(id))
+        {
+            yield return null;
+        }
     }
 }
