@@ -18,9 +18,10 @@ MonoBehaviour:
     - Text: "The next morning you decide to look around the neighbourhood and pop
         to the shops\u2026"
       ArtIndex: 0
-    - Text: "You pass some people sleeping rough right beside the \u201Cto let\u201D
-        and \u201Cfor sale\u201D signs of a big tower block. You think about the
-        irony of it all..."
+    - Text: "You pass some people sleeping rough right beside the <font=\"Spectral-Bold
+        SDF\">\u201Cto let\u201D</font> and <font=\"Spectral-Bold SDF\">\u201Cfor
+        sale\u201D</font> signs of a big tower block. You think about the irony of
+        it all..."
       ArtIndex: 1
     - Text: "You look up and notice\u2026"
       ArtIndex: -1
