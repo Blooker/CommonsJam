@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b11aaff2891e19da81be96bca6b098, type: 3}
+  m_Name: Dialogue_Choice
+  m_EditorClassIdentifier: 
+  Options:
+  - Text: Location Value Tax - Basicallyyyyy a tax system which would remove all
+      landlords
+    ResultDialogue: {fileID: 0}
+    ResultPoints: -1
+  - Text: Location Value Tax - A tax system on land which rewards an efficient use
+      of land that houses many people, and punishes the owners of land that is largely
+      unoccupied. It stops the speculative land hoarding that prevents homes from
+      being built.
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 1
+  - Text: Location Value Tax - EAT THE LANDLORDS, EAT THE RICH
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 3
+  - Text: Location Value Tax - A tax system which would stop from buying up all the
+      land around here to build luxury apartments and bungalows which are half-empty.
+      It would reward smaller, more housing-efficient landlords such as yourself.
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 3

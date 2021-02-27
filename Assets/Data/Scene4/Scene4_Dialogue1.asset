@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Scene4_Dialogue1
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: 
+    Lines:
+    - Text: <font="Spectral-Bold SDF">2 YEARS LATER</font>
+      ArtIndex: 0
+    - Text: "John was forced to sell some of his property portfolio to HousingCorp\u2122,
+        a bigger property development company."
+      ArtIndex: -1
+    - Text: 'You peer out of the balcony with John, seeing newly built high-rise
+        flats all around you. Many of the flats are half-filled since rent is above
+        other similar flats in the area. '
+      ArtIndex: 1
+    - Text: "There are 10 \u201Caffordable\u201D flats (out of 300), right next to
+        the bins."
+      ArtIndex: 2
+    - Text: You also notice a few new faces sleeping in the rough.
+      ArtIndex: 3
+    - Text: "Oh.. and there he is again.. chatting some shit about losing some properties
+        and not having as much money\u2026  You zone out a little, till he says..."
+      ArtIndex: -1
+  - Name: John
+    Lines:
+    - Text: Really sucks losing out on all that rent those bloody bastards took from
+        me.
+      ArtIndex: -1
+  NextChoice: {fileID: 0}
+  NextDialogue: {fileID: 0}

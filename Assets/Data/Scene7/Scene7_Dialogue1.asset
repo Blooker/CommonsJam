@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Scene7_Dialogue1
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: 
+    Lines:
+    - Text: The day after the protest, you make your way to the supermarket.
+      ArtIndex: 0
+    - Text: There are more luxury apartments and bungalows on offer, but also more
+        homeless people.
+      ArtIndex: 1
+    - Text: "You look up, and notice\u2026"
+      ArtIndex: -1
+    - Text: "John is standing outside the supermarket. You walk over to say hi, but
+        a homeless person interrupts to ask you for money\u2026"
+      ArtIndex: 2
+    - Text: You give them some change, and continue on to your neighbour.
+      ArtIndex: -1
+    - Text: Again he mentions something trivial about the weather, and then pauses...
+      ArtIndex: -1
+  - Name: John
+    Lines:
+    - Text: "Even more homeless people around here lately. I\u2019m guessing the
+        new builds didn\u2019t help much\u2026"
+      ArtIndex: -1
+  NextChoice: {fileID: 11400000, guid: 37b1cc16133c43772912e3551c4274c0, type: 2}
+  NextDialogue: {fileID: 0}

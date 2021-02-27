@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
+  m_Name: Scene5_Dialogue1
+  m_EditorClassIdentifier: 
+  Parts:
+  - Name: 
+    Lines:
+    - Text: "After a walk back from the shops, a protest organiser approaches. They
+        notify you of HousingCorp\u2122's plans to build 10 new luxury bungalows
+        on under-regulated land in the area."
+      ArtIndex: 0
+    - Text: "You express your shared views of HousingCorp\u2122, agree to attend,
+        \nand head back home."
+      ArtIndex: -1
+    - Text: "John sees you painting a placard and asks what you are painting\u2026"
+      ArtIndex: 1
+  NextChoice: {fileID: 0}
+  NextDialogue: {fileID: 0}

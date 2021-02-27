@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b11aaff2891e19da81be96bca6b098, type: 3}
+  m_Name: Scene4_Choice
+  m_EditorClassIdentifier: 
+  Options:
+  - Text: "Ah I\u2019m sorry to hear, at least you have some property left."
+    ResultDialogue: {fileID: 0}
+    ResultPoints: -1
+  - Text: "Stop whinging, don\u2019t tell me you didn\u2019t see that coming?"
+    ResultDialogue: {fileID: 0}
+    ResultPoints: -3
+  - Text: "Yeah.\t.. honestly these big-fish property developers are ruining the
+      area and clearly not helping the homeless."
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 2
+  - Text: "These property developers have waay too much power, they need to be regulated
+      so that landlords like you aren\u2019t forced out of the market!"
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 3

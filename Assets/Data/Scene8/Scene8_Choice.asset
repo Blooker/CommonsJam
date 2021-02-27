@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b11aaff2891e19da81be96bca6b098, type: 3}
+  m_Name: Scene8_Choice
+  m_EditorClassIdentifier: 
+  Options:
+  - Text: You voting in the mayoral elections?
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 1
+  - Text: "You better be voting for the LVT by this point\u2026 DOWN WITH THE LANDLORDS!!!"
+    ResultDialogue: {fileID: 0}
+    ResultPoints: -3
+  - Text: Hey! You voting for this <Mayor>? Seems like the perfect way to get back
+      at the greedy <company> property developers, and level out the market for smaller
+      developers like you!
+    ResultDialogue: {fileID: 0}
+    ResultPoints: 3
+  - Text: Interesting paper today, catch you in a bit!
+    ResultDialogue: {fileID: 0}
+    ResultPoints: -1
