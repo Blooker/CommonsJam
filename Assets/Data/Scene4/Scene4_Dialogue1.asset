@@ -19,11 +19,11 @@ MonoBehaviour:
       ArtIndex: 0
     - Text: "John was forced to sell some of his property portfolio to HousingCorp\u2122,
         a bigger property development company."
-      ArtIndex: -1
+      ArtIndex: 1
     - Text: 'You peer out of the balcony with John, seeing newly built high-rise
         flats all around you. Many of the flats are half-filled since rent is above
         other similar flats in the area. '
-      ArtIndex: 1
+      ArtIndex: -1
     - Text: "There are 10 \u201Caffordable\u201D flats (out of 300), right next to
         the bins."
       ArtIndex: 2
@@ -37,5 +37,5 @@ MonoBehaviour:
     - Text: Really sucks losing out on all that rent those bloody bastards took from
         me.
       ArtIndex: -1
-  NextChoice: {fileID: 0}
+  NextChoice: {fileID: 11400000, guid: ab8d9c594e9a8d63789f4bc3d11099b3, type: 2}
   NextDialogue: {fileID: 0}

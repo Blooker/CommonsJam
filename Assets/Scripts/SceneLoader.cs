@@ -9,14 +9,10 @@ public class SceneLoader : ScriptableObject
 {
     private int NumScenes;
     private int CurrentScene;
-    
-    private void Awake()
-    {
-        NumScenes = SceneManager.sceneCountInBuildSettings;
-    }
 
     private void OnEnable()
     {
+        NumScenes = SceneManager.sceneCountInBuildSettings;
         CurrentScene = SceneManager.GetActiveScene().buildIndex;
     }
 

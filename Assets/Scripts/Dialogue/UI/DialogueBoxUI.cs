@@ -125,6 +125,11 @@ public class DialogueBoxUI : MonoBehaviour
                             newI++;
                             charPos++;
                         } while (chars[i+j-1] != '>');
+
+                        if (i + j >= chars.Length)
+                        {
+                            break;
+                        }
                     }
                     
                     DialogueText.text += chars[i+j];
