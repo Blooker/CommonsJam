@@ -18,6 +18,6 @@ MonoBehaviour:
     - Text: You head over to the protest on your own...
       ArtIndex: 0
     - Text: Meanwhile, John is sitting at home playing Monopoly by himself :'(
-      ArtIndex: 0
+      ArtIndex: 1
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
