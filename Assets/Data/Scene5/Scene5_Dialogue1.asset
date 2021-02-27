@@ -20,9 +20,9 @@ MonoBehaviour:
         on under-regulated land in the area."
       ArtIndex: 0
     - Text: "You express your shared views of HousingCorp\u2122, agree to attend,
-        \nand head back home."
+        and head back home."
       ArtIndex: -1
     - Text: "John sees you painting a placard and asks what you are painting\u2026"
       ArtIndex: 1
-  NextChoice: {fileID: 0}
+  NextChoice: {fileID: 11400000, guid: 059981d33abb5a8afb16d5e154fa8b37, type: 2}
   NextDialogue: {fileID: 0}
