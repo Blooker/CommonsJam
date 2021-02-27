@@ -31,6 +31,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        if (dialogue == null)
+        {
+            StartCoroutine(EndScene());
+            return;
+        }
+        
         Dialogue = dialogue;
         
         PartIndex = 0;

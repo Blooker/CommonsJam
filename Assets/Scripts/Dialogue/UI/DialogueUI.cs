@@ -9,6 +9,8 @@ public class DialogueUI : MonoBehaviour
 
     public IEnumerator FadeOutAll()
     {
+        CanvasGroup.interactable = false;
+        
         int id = LeanTween.alphaCanvas(CanvasGroup, 0, FadeTime).id;
         while (LeanTween.isTweening(id))
         {
