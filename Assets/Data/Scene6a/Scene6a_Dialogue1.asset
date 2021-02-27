@@ -19,9 +19,9 @@ MonoBehaviour:
       ArtIndex: 0
     - Text: He scans around apprehensively, wondering if this was a good use of his
         Saturday morning.
-      ArtIndex: 1
+      ArtIndex: -1
     - Text: He notices a group of protestors all holding up placards mentioning "LVT"
-      ArtIndex: 2
+      ArtIndex: 1
     - Text: "John is silent for much of the day\u2026 you sense his hesitation, but
         act casual when he asks\u2026"
       ArtIndex: -1
@@ -29,5 +29,5 @@ MonoBehaviour:
     Lines:
     - Text: "So what\u2019s this LVT thing about then?"
       ArtIndex: -1
-  NextChoice: {fileID: 0}
+  NextChoice: {fileID: 11400000, guid: 077ff767a8966efc8b698f5da5c57700, type: 2}
   NextDialogue: {fileID: 0}
