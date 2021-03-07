@@ -92,6 +92,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator EndScene()
     {
+        SoundManager.Instance.Fade(fadeIn: false);
         yield return UI.FadeOutAll();
         yield return new WaitForSeconds(0.5f);
         
