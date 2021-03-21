@@ -13,13 +13,22 @@ public class SceneLoader : ScriptableObject
     private void OnEnable()
     {
         NumScenes = SceneManager.sceneCountInBuildSettings;
+
+        #if UNITY_EDITOR
         CurrentScene = SceneManager.GetActiveScene().buildIndex;
+        #else
+        CurrentScene = 0;
+        #endif
+
     }
 
     public void NextScene()
     {
         CurrentScene++;
         if (CurrentScene < NumScenes)
+        {
+            Debug.Log($"Loading scene {CurrentScene}");
             SceneManager.LoadSceneAsync(CurrentScene, LoadSceneMode.Single);
+        }
     }
 }
