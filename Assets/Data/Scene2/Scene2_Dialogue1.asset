@@ -18,25 +18,32 @@ MonoBehaviour:
     - Text: "The next morning you decide to look around the neighbourhood and pop
         to the shops\u2026"
       ArtIndex: 0
+      Audio: {fileID: 8300000, guid: bde13471db109a4458a5fc3891425027, type: 3}
     - Text: "You pass some people sleeping rough right beside the <font=\"Spectral-Bold
         SDF\">\u201Cto let\u201D</font> and <font=\"Spectral-Bold SDF\">\u201Cfor
         sale\u201D</font> signs of a big tower block. You think about the irony of
         it all..."
       ArtIndex: 1
+      Audio: {fileID: 0}
     - Text: "You look up and notice\u2026"
       ArtIndex: -1
+      Audio: {fileID: 0}
     - Text: "John is standing outside the supermarket. You walk over to say hi, but
         a homeless person interrupts to ask you for money\u2026"
       ArtIndex: 2
+      Audio: {fileID: 0}
     - Text: You give them some change, and continue on to your neighbour.
       ArtIndex: -1
+      Audio: {fileID: 0}
     - Text: "As he makes some nothing-y comment on the weather, you notice his eyes
         follow the homeless person you just gave your change to\u2026"
       ArtIndex: -1
+      Audio: {fileID: 0}
   - Name: John
     Lines:
     - Text: Loads of homeless people around here lately, hopefully these new builds
         will help somewhat...
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 6d60e7f0b171b9670a737a5cd443bee0, type: 2}
   NextDialogue: {fileID: 0}

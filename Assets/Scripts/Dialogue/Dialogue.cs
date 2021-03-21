@@ -25,5 +25,7 @@ public class DialogueLine
 {
     [TextArea(3, 10)]
     public string Text;
+    
     public int ArtIndex = -1;
+    public AudioClip Audio;
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
-  m_Name: Scene5_Dialogue1
+  m_Name: Scene5_NotP_Dialogue1
   m_EditorClassIdentifier: 
   Parts:
   - Name: 
@@ -19,10 +19,13 @@ MonoBehaviour:
         notify you of HousingCorp\u2122's plans to build 10 new luxury bungalows
         on under-regulated land in the area."
       ArtIndex: 0
+      Audio: {fileID: 8300000, guid: 719ae199d89d5a6e0bb09642a13f2175, type: 3}
     - Text: "You express your shared views of HousingCorp\u2122, agree to attend,
         and head back home."
       ArtIndex: -1
+      Audio: {fileID: 0}
     - Text: "John sees you painting a placard and asks what you are painting\u2026"
       ArtIndex: 1
-  NextChoice: {fileID: 11400000, guid: 059981d33abb5a8afb16d5e154fa8b37, type: 2}
+      Audio: {fileID: 0}
+  NextChoice: {fileID: 11400000, guid: 058b47a6acc73ec47aac7f7eaad3d9a5, type: 2}
   NextDialogue: {fileID: 0}

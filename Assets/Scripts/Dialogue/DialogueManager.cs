@@ -68,6 +68,11 @@ public class DialogueManager : MonoBehaviour
         {
             ArtManager.Instance.FadeIn(line.ArtIndex);
         }
+
+        if (line.Audio != null)
+        {
+            SoundManager.Instance.NextAudio(line.Audio);
+        }
         
         LineIndex++;
     }
@@ -92,7 +97,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator EndScene()
     {
-        SoundManager.Instance.Fade(fadeIn: false);
+        SoundManager.Instance.NextAudio(clip: null);
         yield return UI.FadeOutAll();
         yield return new WaitForSeconds(0.5f);
         

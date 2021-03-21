@@ -17,22 +17,29 @@ MonoBehaviour:
     Lines:
     - Text: The day after the protest, you make your way to the supermarket.
       ArtIndex: 0
+      Audio: {fileID: 8300000, guid: 62d28a628d17337459ed5c3d800c3ee1, type: 3}
     - Text: There are more luxury apartments and bungalows on offer, but also more
         homeless people.
       ArtIndex: 1
+      Audio: {fileID: 0}
     - Text: "You look up, and notice\u2026"
       ArtIndex: -1
+      Audio: {fileID: 0}
     - Text: "John is standing outside the supermarket. You walk over to say hi, but
         a homeless person interrupts to ask you for money\u2026"
       ArtIndex: 2
+      Audio: {fileID: 0}
     - Text: You give them some change, and continue on to your neighbour.
       ArtIndex: -1
+      Audio: {fileID: 0}
     - Text: Again he mentions something trivial about the weather, and then pauses...
       ArtIndex: -1
+      Audio: {fileID: 0}
   - Name: John
     Lines:
     - Text: "Even more homeless people around here lately. I\u2019m guessing the
         new builds didn\u2019t help much\u2026"
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 37b1cc16133c43772912e3551c4274c0, type: 2}
   NextDialogue: {fileID: 0}

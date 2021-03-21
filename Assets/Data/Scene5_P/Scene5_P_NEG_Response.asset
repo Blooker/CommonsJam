@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
-  m_Name: Scene6b_Dialogue1
+  m_Name: Scene5_P_NEG_Response
   m_EditorClassIdentifier: 
   Parts:
-  - Name: 
+  - Name: John
     Lines:
-    - Text: You head over to the protest on your own...
-      ArtIndex: 0
-      Audio: {fileID: 8300000, guid: f8386cacc3ef5a253a9c7c1db1e93a59, type: 3}
-    - Text: Meanwhile, John is sitting at home playing Monopoly by himself :'(
-      ArtIndex: 1
-      Audio: {fileID: 8300000, guid: bdda78b698aeea61ea5bdc9fa8fb7107, type: 3}
+    - Text: "Yeah I\u2019ll join, but let me make my own placard! I\u2019ve still
+        got some learning to do."
+      ArtIndex: -1
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}

@@ -17,12 +17,15 @@ MonoBehaviour:
     Lines:
     - Text: Hi! This is you.
       ArtIndex: 0
+      Audio: {fileID: 0}
     - Text: You are a 20-something year old, who has just started earning enough
         money to rent in your hometown of London.
       ArtIndex: -1
+      Audio: {fileID: 8300000, guid: f2e02c07a24f8149f9a05ff6075d0977, type: 3}
     - Text: Your neighbour, John, is a 30-something year old entrepreneur and budding
         property developer. They come over to bring you a cake!
       ArtIndex: 1
+      Audio: {fileID: 0}
   - Name: John
     Lines:
     - Text: "Hey! Nice to meet you. I live next door and wanted to introduce myself.
@@ -30,7 +33,9 @@ MonoBehaviour:
         changed so much in that time, and I can\u2019t wait to see how it continues
         to!"
       ArtIndex: -1
+      Audio: {fileID: 0}
     - Text: "So\u2026 what made you move here?"
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 5d89333b7120abf24b77e2df96e428f7, type: 2}
   NextDialogue: {fileID: 0}
