@@ -14,16 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Options:
   - Text: "Ah I\u2019m sorry to hear, at least you have some property left."
+    Flag: NOT_P
     ResultDialogue: {fileID: 11400000, guid: a532e41586cc4cc41a20322a8d0d4676, type: 2}
     ResultPoints: -1
   - Text: "Stop whinging, don\u2019t tell me you didn\u2019t see that coming?"
+    Flag: NOT_P
     ResultDialogue: {fileID: 11400000, guid: a532e41586cc4cc41a20322a8d0d4676, type: 2}
     ResultPoints: -3
   - Text: Yeah... honestly these big-fish property developers are ruining the area
       and clearly not helping the homeless.
+    Flag: P
     ResultDialogue: {fileID: 11400000, guid: 8bc46299da725514ab94255916f30c04, type: 2}
     ResultPoints: 2
   - Text: "These property developers have waay too much power, they need to be regulated
       so that landlords like you aren\u2019t forced out of the market!"
+    Flag: P
     ResultDialogue: {fileID: 11400000, guid: 8bc46299da725514ab94255916f30c04, type: 2}
     ResultPoints: 3

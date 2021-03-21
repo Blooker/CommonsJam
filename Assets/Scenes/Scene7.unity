@@ -1959,7 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1640c53d78be0c384b0469fcbebda476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeTime: 1
+  FadeTime: 0.5
   Sources:
   - {fileID: 902796736}
 --- !u!4 &1094187991
@@ -2525,7 +2525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanvasGroup: {fileID: 1524305771}
-  FadeTime: 1
+  FadeTime: 0.5
 --- !u!1001 &1582861841
 PrefabInstance:
   m_ObjectHideFlags: 0

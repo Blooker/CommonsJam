@@ -9,15 +9,17 @@ using UnityEngine.Serialization;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
-
+    
     [SerializeField] private DialogueUI UI;
     [SerializeField] private DialogueBoxesUI BoxesUI;
     [SerializeField] private DialogueChoiceUI ChoiceUI;
 
     [SerializeField] private SceneLoader SceneLoader;
-    
+
+    private static HashSet<string> Flags;
+
     private Dialogue Dialogue;
-    
+
     private int PartIndex;
     private int LineIndex;
 
@@ -26,6 +28,14 @@ public class DialogueManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+        }
+        
+        if (Flags == null)
+            Flags = new HashSet<string>();
+
+        foreach (var flag in Flags)
+        {
+            Debug.Log(flag);
         }
     }
 
@@ -77,6 +87,26 @@ public class DialogueManager : MonoBehaviour
         LineIndex++;
     }
 
+    public void SetFlag(string flag)
+    {
+        if (string.IsNullOrEmpty(flag))
+        {
+            return;
+        }
+
+        Flags.Add(flag);
+    } 
+    
+    public bool GetFlag(string flag)
+    {
+        if (string.IsNullOrEmpty(flag))
+        {
+            return false;
+        }
+
+        return Flags.Contains(flag);
+    } 
+    
     private void EndDialogue()
     {
         Debug.Log("End of conversation");

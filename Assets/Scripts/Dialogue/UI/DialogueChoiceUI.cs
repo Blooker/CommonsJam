@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class DialogueChoiceUI : MonoBehaviour
 {
-    [SerializeField] private DialogueManager Dialogue;
     [SerializeField] private DialogueOptionUI[] OptionUIs;
     [SerializeField] private float BoxFadeTime;
 
@@ -47,7 +46,10 @@ public class DialogueChoiceUI : MonoBehaviour
     public void Select(DialogueOption option)
     {
         ScoreManager.Instance.Add(option.ResultPoints);
-        Dialogue.StartDialogue(option.ResultDialogue);
+        
+        DialogueManager.Instance.SetFlag(option.Flag);
+        DialogueManager.Instance.StartDialogue(option.ResultDialogue);
+
         ContinueButton.interactable = true;
         FadeOut();
     }

@@ -14,17 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Options:
   - Text: Are you joking?
+    Flag: 
     ResultDialogue: {fileID: 0}
     ResultPoints: -3
   - Text: I mean sure, but I doubt homeless people will suddenly have the income
       to pay rent each time a new build pops up.
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: a7ed80967975f897d8d75266b1a962e2, type: 2}
     ResultPoints: 2
   - Text: "Maybe if the new builds were popping up so quickly that they had no problem
       with housing homeless people... you know, temporarily, for free. But that\u2019s
       not the case."
+    Flag: BONUS
     ResultDialogue: {fileID: 11400000, guid: a7ed80967975f897d8d75266b1a962e2, type: 2}
     ResultPoints: 3
   - Text: Yeah, maybe.
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: a7ed80967975f897d8d75266b1a962e2, type: 2}
     ResultPoints: 1

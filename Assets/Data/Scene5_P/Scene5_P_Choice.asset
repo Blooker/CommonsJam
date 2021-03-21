@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Options:
   - Text: 'Land Value Tax now! - Want to join me on the protest? '
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: ff2cef438df4ea84c876b606679b69fe, type: 2}
     ResultPoints: 3
   - Text: Rent prices as high as the skyscrapers! - Want to join me on the protest?
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: ff2cef438df4ea84c876b606679b69fe, type: 2}
     ResultPoints: 2
   - Text: Stop new developments!  - Want to join me on the protest?
+    Flag: NEG
     ResultDialogue: {fileID: 11400000, guid: 338de14302f243d40860d6d235045b1e, type: 2}
     ResultPoints: -1
   - Text: More affordable units! - Want to join me on the protest?
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: ff2cef438df4ea84c876b606679b69fe, type: 2}
     ResultPoints: 1
