@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "SceneLoader", menuName = "ScriptableObjects/SceneLoader", order = 1)]
 public class SceneLoader : ScriptableObject
 {
+    private static readonly int SCENE_7_INDEX = 8;
+    
     private int NumScenes;
     private int CurrentScene;
 
@@ -31,6 +33,12 @@ public class SceneLoader : ScriptableObject
         else
         {
             CurrentScene++;
+        }
+
+        // Gross special case code, might make a better system if I need to
+        if (CurrentScene == SCENE_7_INDEX && DialogueManager.Instance.GetFlag("BONUS"))
+        {
+            CurrentScene = SCENE_7_INDEX + 1;
         }
         
         if (CurrentScene < NumScenes)
