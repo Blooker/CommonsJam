@@ -17,7 +17,7 @@ MonoBehaviour:
     Lines:
     - Text: <font="Spectral-Bold SDF">2 YEARS LATER</font>
       ArtIndex: 0
-    - Text: "John was forced to sell some of his property portfolio to HousingCorp\u2122,
+    - Text: "John was forced to sell some of his property portfolio to HousingCorp\U0001F3D7\u2122,
         a bigger property development company."
       ArtIndex: 1
     - Text: 'You peer out of the balcony with John, seeing newly built high-rise
