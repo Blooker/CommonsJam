@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
-  m_Name: Scene8_ChoiceResult
+  m_Name: Scene8_ChoiceResult_1
   m_EditorClassIdentifier: 
   Parts:
   - Name: John
     Lines:
-    - Text: "Hmm, I\u2019m still not sure yet. I\u2019ll let you know\u2026"
+    - Text: "Oh.. the local politics\u2026 sure, catch you soon!"
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}

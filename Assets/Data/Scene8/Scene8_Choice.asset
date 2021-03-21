@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Options:
   - Text: You voting in the mayoral elections?
-    ResultDialogue: {fileID: 11400000, guid: 3b66b3c2befa6bec185e4b8a70afb7cc, type: 2}
+    ResultDialogue: {fileID: 11400000, guid: 43558b19e2636c24a8275d9ec291e51c, type: 2}
     ResultPoints: 1
   - Text: "You better be voting for the LVT by this point\u2026 DOWN WITH THE LANDLORDS!!!"
-    ResultDialogue: {fileID: 11400000, guid: 3b66b3c2befa6bec185e4b8a70afb7cc, type: 2}
+    ResultDialogue: {fileID: 11400000, guid: 43558b19e2636c24a8275d9ec291e51c, type: 2}
     ResultPoints: -3
   - Text: Hey! You voting for this <Mayor>? Seems like the perfect way to get back
       at the greedy <company> property developers, and level out the market for smaller
       developers like you!
-    ResultDialogue: {fileID: 11400000, guid: 3b66b3c2befa6bec185e4b8a70afb7cc, type: 2}
+    ResultDialogue: {fileID: 11400000, guid: 43558b19e2636c24a8275d9ec291e51c, type: 2}
     ResultPoints: 3
   - Text: Interesting paper today, catch you in a bit!
-    ResultDialogue: {fileID: 11400000, guid: 3b66b3c2befa6bec185e4b8a70afb7cc, type: 2}
+    ResultDialogue: {fileID: 11400000, guid: 4ddd082953e5bd042b4e677e3f1ac1f5, type: 2}
     ResultPoints: -1
