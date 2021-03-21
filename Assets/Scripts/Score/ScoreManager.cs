@@ -7,10 +7,14 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
     
-    public int Score { get; private set; }
+    public static int Score { get; private set; }
+
+    private int DEBUG_Score;
 
     private void Awake()
     {
+        DEBUG_Score = Score;
+
         if (Instance == null)
         {
             Instance = this;
@@ -20,5 +24,6 @@ public class ScoreManager : MonoBehaviour
     public void Add(int points)
     {
         Score += points;
+        DEBUG_Score = Score;
     }
 }

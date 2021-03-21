@@ -2252,7 +2252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68b6ae17932ca56497c544ed0580c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogue: {fileID: 1268100744}
   OptionUIs:
   - {fileID: 1398500690}
   - {fileID: 222213297}
