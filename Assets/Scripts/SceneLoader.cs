@@ -22,9 +22,17 @@ public class SceneLoader : ScriptableObject
 
     }
 
-    public void NextScene()
+    public void NextScene(int nextSceneIndex)
     {
-        CurrentScene++;
+        if (nextSceneIndex >= 0)
+        {
+            CurrentScene = nextSceneIndex;
+        }
+        else
+        {
+            CurrentScene++;
+        }
+        
         if (CurrentScene < NumScenes)
         {
             Debug.Log($"Loading scene {CurrentScene}");

@@ -17,5 +17,7 @@ MonoBehaviour:
     Lines:
     - Text: Oh, cool.
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: 8

@@ -10,6 +10,7 @@ public class Dialogue : ScriptableObject
     
     public DialogueChoice NextChoice;
     public Dialogue NextDialogue;
+    public int NextSceneIndex = -1;
 }
 
 [System.Serializable]

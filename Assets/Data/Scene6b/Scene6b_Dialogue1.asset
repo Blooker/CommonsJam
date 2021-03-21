@@ -23,3 +23,4 @@ MonoBehaviour:
       Audio: {fileID: 8300000, guid: bdda78b698aeea61ea5bdc9fa8fb7107, type: 3}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: 8

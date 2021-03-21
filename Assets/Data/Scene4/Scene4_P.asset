@@ -18,5 +18,7 @@ MonoBehaviour:
     - Text: "Yeah, they\u2019re proper parasites. We\u2019ll sort this out I\u2019m
         sure."
       ArtIndex: 5
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: 4

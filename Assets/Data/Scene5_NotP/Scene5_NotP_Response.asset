@@ -17,5 +17,7 @@ MonoBehaviour:
     Lines:
     - Text: "Nah, I think I\u2019ll pass. I just need to work harder on my portfolio."
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: 7

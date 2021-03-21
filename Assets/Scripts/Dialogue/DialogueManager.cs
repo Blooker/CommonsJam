@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (dialogue == null)
         {
-            StartCoroutine(EndScene());
+            StartCoroutine(EndScene(nextSceneIndex: -1));
             return;
         }
         
@@ -121,16 +121,16 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(EndScene());
+            StartCoroutine(EndScene(Dialogue.NextSceneIndex));
         }
     }
 
-    private IEnumerator EndScene()
+    private IEnumerator EndScene(int nextSceneIndex)
     {
         SoundManager.Instance.NextAudio(clip: null);
         yield return UI.FadeOutAll();
         yield return new WaitForSeconds(0.5f);
         
-        SceneLoader.NextScene();
+        SceneLoader.NextScene(nextSceneIndex);
     }
 }

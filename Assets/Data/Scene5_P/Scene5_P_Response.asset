@@ -18,5 +18,7 @@ MonoBehaviour:
     - Text: "Yeah, I don\u2019t want to stop development altogether, but this particular
         developer has gone too far. I\u2019ll be there."
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: 6
