@@ -15,7 +15,9 @@ MonoBehaviour:
   Parts:
   - Name: John
     Lines:
-    - Text: "We\u2019ll soon know, won\u2019t we. Onwards and upwards!"
+    - Text: "\"We\u2019ll soon know, won\u2019t we. Onwards and upwards!\""
       ArtIndex: -1
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1

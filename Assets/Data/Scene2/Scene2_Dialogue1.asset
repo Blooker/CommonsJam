@@ -41,9 +41,10 @@ MonoBehaviour:
       Audio: {fileID: 0}
   - Name: John
     Lines:
-    - Text: Loads of homeless people around here lately, hopefully these new builds
-        will help somewhat...
+    - Text: '"Loads of homeless people around here lately, hopefully these new builds
+        will help somewhat..."'
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 6d60e7f0b171b9670a737a5cd443bee0, type: 2}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
