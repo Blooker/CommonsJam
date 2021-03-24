@@ -18,11 +18,13 @@ MonoBehaviour:
     - Text: You and John are picking up a newspaper out front.
       ArtIndex: 0
       Audio: {fileID: 8300000, guid: fef15497eac1425a9ab4ce85cf32f085, type: 3}
-    - Text: 'NEWSFLASH **Westminster grants tax raising powers to city regions**
+    - Text: '<font="Spectral-Bold SDF">NEWSFLASH: Westminster grants tax raising
+        powers to city regions</font>
 
-        <Mayor>
-        promises to instill Location-Value Tax to combat greedy property developers.'
+        Mayor-candidate Julia Green promises
+        to instill Location-Value Tax to combat greedy property developers.'
       ArtIndex: 1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 089d338ad6fe671a881f8d65b8403ada, type: 2}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
