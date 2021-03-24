@@ -28,14 +28,17 @@ MonoBehaviour:
       Audio: {fileID: 0}
   - Name: John
     Lines:
-    - Text: "Hey! Nice to meet you. I live next door and wanted to introduce myself.
-        I\u2019m John and have lived here for just over a year now. The area has
-        changed so much in that time, and I can\u2019t wait to see how it continues
-        to!"
+    - Text: "\"Hey! Nice to meet you. I live next door and wanted to introduce myself.
+        I\u2019m John and have lived here for just over a year now.\""
       ArtIndex: -1
       Audio: {fileID: 0}
-    - Text: "So\u2026 what made you move here?"
+    - Text: "\"The area has changed so much in that time, and I can\u2019t wait to
+        see how it continues to!\""
+      ArtIndex: -1
+      Audio: {fileID: 0}
+    - Text: "\"So\u2026 what made you move here?\""
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 5d89333b7120abf24b77e2df96e428f7, type: 2}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
