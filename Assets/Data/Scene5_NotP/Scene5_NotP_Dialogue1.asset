@@ -24,8 +24,10 @@ MonoBehaviour:
         and head back home."
       ArtIndex: -1
       Audio: {fileID: 0}
-    - Text: "John sees you painting a placard and asks what you are painting\u2026"
+    - Text: "<font=\"Spectral-Bold SDF\">John</font> sees you painting a placard
+        and asks what you are painting\u2026"
       ArtIndex: 1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 058b47a6acc73ec47aac7f7eaad3d9a5, type: 2}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1

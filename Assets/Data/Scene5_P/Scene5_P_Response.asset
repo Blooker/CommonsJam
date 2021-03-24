@@ -15,8 +15,8 @@ MonoBehaviour:
   Parts:
   - Name: John
     Lines:
-    - Text: "Yeah, I don\u2019t want to stop development altogether, but this particular
-        developer has gone too far. I\u2019ll be there."
+    - Text: "\"Yeah, I don\u2019t want to stop development altogether, but this particular
+        developer has gone too far. I\u2019ll be there.\""
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}

@@ -15,8 +15,8 @@ MonoBehaviour:
   Parts:
   - Name: John
     Lines:
-    - Text: "Yeah I\u2019ll join, but let me make my own placard! I\u2019ve still
-        got some learning to do."
+    - Text: "\"Yeah I\u2019ll join, but let me make my own placard! I\u2019ve still
+        got some learning to do.\""
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}
