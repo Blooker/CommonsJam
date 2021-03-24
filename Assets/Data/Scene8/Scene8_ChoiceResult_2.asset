@@ -15,8 +15,9 @@ MonoBehaviour:
   Parts:
   - Name: John
     Lines:
-    - Text: "Hmm, I\u2019m still not sure yet. I\u2019ll let you know\u2026"
+    - Text: "\"Hmm, I\u2019m still not sure yet. I\u2019ll let you know\u2026\""
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
