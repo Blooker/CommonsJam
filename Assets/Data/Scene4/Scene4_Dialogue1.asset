@@ -34,15 +34,16 @@ MonoBehaviour:
     - Text: You also notice a few new faces sleeping in the rough.
       ArtIndex: 3
       Audio: {fileID: 0}
-    - Text: "Oh.. and there he is again.. chatting some shit about losing some properties
-        and not having as much money\u2026  You zone out a little, till he says..."
+    - Text: Oh... and there he is again... chatting some shit about losing some properties
+        and not having as much money... You zone out a little, till he says...
       ArtIndex: -1
       Audio: {fileID: 0}
   - Name: John
     Lines:
-    - Text: Really sucks losing out on all that rent those bloody bastards took from
-        me.
+    - Text: '"Really sucks losing out on all that rent those bloody bastards took
+        from me."'
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: ab8d9c594e9a8d63789f4bc3d11099b3, type: 2}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
