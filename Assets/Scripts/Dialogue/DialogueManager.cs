@@ -47,6 +47,12 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
+        if (dialogue.Parts.Length == 0)
+        {
+            StartCoroutine(EndScene(dialogue.NextSceneIndex));
+            return;
+        }
+        
         Dialogue = dialogue;
         
         PartIndex = 0;

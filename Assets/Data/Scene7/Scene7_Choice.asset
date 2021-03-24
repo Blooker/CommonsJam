@@ -15,7 +15,7 @@ MonoBehaviour:
   Options:
   - Text: Yeah, no shit.
     Flag: 
-    ResultDialogue: {fileID: 0}
+    ResultDialogue: {fileID: 11400000, guid: 355ffb289986aab058b1a096d1963435, type: 2}
     ResultPoints: -3
   - Text: "Look, I know a few years ago you thought these new flats would help fix
       the housing problem, but it hasn\u2019t\u2026 The Location Value Tax would
@@ -23,16 +23,16 @@ MonoBehaviour:
       give it directly to people who need it, and reward more housing-efficient landlords\u2026
       like yourself."
     Flag: 
-    ResultDialogue: {fileID: 0}
+    ResultDialogue: {fileID: 11400000, guid: 355ffb289986aab058b1a096d1963435, type: 2}
     ResultPoints: 3
   - Text: "Surely you agree that land itself is in fixed supply, so something like
       a Location Value Tax would just remove incentives for landowners to hoard undeveloped
       land. As they say \u201CEverybody works but the vacant lot\". You look puzzled,
       look..."
     Flag: 
-    ResultDialogue: {fileID: 0}
+    ResultDialogue: {fileID: 11400000, guid: 355ffb289986aab058b1a096d1963435, type: 2}
     ResultPoints: 2
   - Text: Clearly.
     Flag: 
-    ResultDialogue: {fileID: 0}
+    ResultDialogue: {fileID: 11400000, guid: 355ffb289986aab058b1a096d1963435, type: 2}
     ResultPoints: -1
