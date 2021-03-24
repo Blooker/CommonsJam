@@ -31,8 +31,9 @@ MonoBehaviour:
       Audio: {fileID: 0}
   - Name: John
     Lines:
-    - Text: "So what\u2019s this LVT thing about then?"
+    - Text: "\"So what\u2019s this LVT thing about then?\""
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: 077ff767a8966efc8b698f5da5c57700, type: 2}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1

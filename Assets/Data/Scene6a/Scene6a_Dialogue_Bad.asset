@@ -15,7 +15,7 @@ MonoBehaviour:
   Parts:
   - Name: John
     Lines:
-    - Text: Er, yeah sure whatever mate.
+    - Text: '"Er, yeah sure whatever mate."'
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}
