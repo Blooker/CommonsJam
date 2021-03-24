@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene7_BONUS.unity
     guid: 16434f24f5f49c0dd9a53c932046a1a6
   - enabled: 1
+    path: Assets/Scenes/Scene7_Phone.unity
+    guid: 14c05c56d048ef748801e5c2cdc2c59e
+  - enabled: 1
     path: Assets/Scenes/Scene8.unity
     guid: 3dd896dd7eef6cf4ebcbeff608b790b7
   m_configObjects: {}
