@@ -15,7 +15,7 @@ MonoBehaviour:
   Parts:
   - Name: 
     Lines:
-    - Text: Hi! This is you.
+    - Text: Hi! This is you, <font="Spectral-Bold SDF">Alex</font>.
       ArtIndex: 0
       Audio: {fileID: 0}
     - Text: You are a 20-something year old, who has just started earning enough
