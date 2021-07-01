@@ -82,7 +82,7 @@ public class DialogueManager : MonoBehaviour
 
         if (line.ArtIndex >= 0)
         {
-            ArtManager.Instance.FadeIn(line.ArtIndex);
+            ArtManager.Instance.Transition(line.ArtIndex);
         }
 
         if (line.Audio != null)

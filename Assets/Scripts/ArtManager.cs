@@ -8,8 +8,7 @@ public class ArtManager : MonoBehaviour
 {
     public static ArtManager Instance;
     
-    [SerializeField] private CanvasGroup[] ArtGroups;
-    [SerializeField] private float FadeTime;
+    [SerializeField] private ArtTransition[] ArtTransitions;
 
     private void Awake()
     {
@@ -19,17 +18,8 @@ public class ArtManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Transition(int index)
     {
-        for (int i = 0; i < ArtGroups.Length; i++)
-        {
-            ArtGroups[i].alpha = 0f;
-        }
-    }
-
-    public void FadeIn(int index)
-    {
-        gameObject.SetActive(true);
-        LeanTween.alphaCanvas(ArtGroups[index], 1, FadeTime).setEaseOutQuart();
+        ArtTransitions[index].Transition();
     }
 }
