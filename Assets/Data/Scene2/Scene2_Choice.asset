@@ -15,7 +15,7 @@ MonoBehaviour:
   Options:
   - Text: Are you joking?
     Flag: 
-    ResultDialogue: {fileID: 0}
+    ResultDialogue: {fileID: 11400000, guid: dd2b27b7188ebfa5492f551abfadb2b5, type: 2}
     ResultPoints: -3
   - Text: I mean sure, but I doubt homeless people will suddenly have the income
       to pay rent each time a new build pops up.

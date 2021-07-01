@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3924c4d0f592b42259249cdd828ff89c, type: 3}
   m_Name: Scene2_Op1_Result
   m_EditorClassIdentifier: 
-  Parts: []
+  Parts:
+  - Name: John
+    Lines:
+    - Text: No? In a bit.
+      ArtIndex: -1
+      Audio: {fileID: 0}
+  - Name: 
+    Lines:
+    - Text: ...
+      ArtIndex: 3
+      Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
