@@ -21,6 +21,12 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    public void Zero()
+    {
+        Score = 0;
+        DEBUG_Score = Score;
+    }
+    
     public void Add(int points)
     {
         Score += points;

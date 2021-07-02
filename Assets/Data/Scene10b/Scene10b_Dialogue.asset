@@ -48,4 +48,4 @@ MonoBehaviour:
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
-  NextSceneIndex: -1
+  NextSceneIndex: 15

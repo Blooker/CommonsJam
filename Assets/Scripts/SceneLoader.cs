@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "SceneLoader", menuName = "ScriptableObjects/SceneLoader", order = 1)]
 public class SceneLoader : ScriptableObject
 {
+    private static readonly int SCENE_1_INDEX = 0;
     private static readonly int SCENE_7_INDEX = 8;
     
     private int NumScenes;
@@ -36,6 +37,11 @@ public class SceneLoader : ScriptableObject
         }
 
         // Gross special case code, might make a better system if I need to
+        if (CurrentScene == SCENE_1_INDEX)
+        {
+            ScoreManager.Instance.Zero();
+        }
+        
         if (CurrentScene == SCENE_7_INDEX && DialogueManager.Instance.GetFlag("BONUS"))
         {
             CurrentScene = SCENE_7_INDEX + 1;
