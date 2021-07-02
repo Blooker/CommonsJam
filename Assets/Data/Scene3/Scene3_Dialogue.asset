@@ -16,7 +16,7 @@ MonoBehaviour:
   - Name: 
     Lines:
     - Text: "You walk to the park 5 mins away, and see two cranes in the sky next
-        to two new-builds which have \u201Cto let\u201D signs all over it."
+        to two new-builds which have \u201Cto let\u201D signs all over them."
       ArtIndex: 0
       Audio: {fileID: 8300000, guid: 4495fbd77ab171172ba73f88952ad83d, type: 3}
     - Text: "You think to yourself\u2026 \u201CIs supply the only problem here\u2026?\u201D"
@@ -27,3 +27,4 @@ MonoBehaviour:
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}
   NextDialogue: {fileID: 0}
+  NextSceneIndex: -1
