@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Scene5_NotP_Choice
   m_EditorClassIdentifier: 
   Options:
-  - Text: 'Land Value Tax now! - Want to join me on the protest? '
+  - Text: Location Value Tax now! A tax system on land which rewards an efficient
+      use of land that houses many people, and punishes the owners of land that is
+      largely unoccupied. - Want to join me on the protest?
     Flag: 
     ResultDialogue: {fileID: 11400000, guid: 18c365f5cadab584ca1354cef39bd93f, type: 2}
     ResultPoints: 2
