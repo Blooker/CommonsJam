@@ -317,13 +317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 648e778d5732fd6629e397401d249650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArtGroups:
-  - {fileID: 1806474360}
-  - {fileID: 295916122}
-  - {fileID: 953488440}
-  - {fileID: 2129374385}
-  - {fileID: 505850434}
-  - {fileID: 1231757246}
   ArtTransitions:
   - {fileID: 1806474361}
   - {fileID: 953488441}
@@ -331,7 +324,6 @@ MonoBehaviour:
   - {fileID: 295916123}
   - {fileID: 505850435}
   - {fileID: 1231757247}
-  FadeTime: 0.33
 --- !u!1001 &222213296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -692,6 +684,17 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 7471955016730790059, guid: 2862e16efbc0ced2ba0a5763b63502ad,
+        type: 3}
+      propertyPath: m_text
+      value: <font="Spectral-Bold SDF">Name:</font> Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471955016730790059, guid: 2862e16efbc0ced2ba0a5763b63502ad,
+        type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5221c44417fb4804298076cf451007f0,
+        type: 2}
     - target: {fileID: 7471955016733461774, guid: 2862e16efbc0ced2ba0a5763b63502ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -750,7 +753,7 @@ PrefabInstance:
     - target: {fileID: 7471955016733461774, guid: 2862e16efbc0ced2ba0a5763b63502ad,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -246.5
+      value: -235.56
       objectReference: {fileID: 0}
     - target: {fileID: 7471955016733461774, guid: 2862e16efbc0ced2ba0a5763b63502ad,
         type: 3}
@@ -760,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 7471955016733461774, guid: 2862e16efbc0ced2ba0a5763b63502ad,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 449.2317
+      value: 471.11627
       objectReference: {fileID: 0}
     - target: {fileID: 7471955016733461774, guid: 2862e16efbc0ced2ba0a5763b63502ad,
         type: 3}

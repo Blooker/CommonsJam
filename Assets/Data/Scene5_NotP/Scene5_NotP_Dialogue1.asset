@@ -16,12 +16,12 @@ MonoBehaviour:
   - Name: 
     Lines:
     - Text: "After a walk back from the shops, a protest organiser approaches. They
-        notify you of HousingCorp\u2122's plans to build 10 new luxury bungalows
-        on under-regulated land in the area."
+        notify you of HousingCorp <sprite=0>\u2122's plans to build 10 new luxury
+        bungalows on under-regulated land in the area."
       ArtIndex: 0
       Audio: {fileID: 8300000, guid: 719ae199d89d5a6e0bb09642a13f2175, type: 3}
-    - Text: "You express your shared views of HousingCorp\u2122, agree to attend,
-        and head back home."
+    - Text: "You express your shared views of HousingCorp <sprite=0>\u2122, agree
+        to attend, and head back home."
       ArtIndex: -1
       Audio: {fileID: 0}
     - Text: "John sees you painting a placard and asks what you are painting\u2026"

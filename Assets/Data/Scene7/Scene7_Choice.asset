@@ -19,7 +19,7 @@ MonoBehaviour:
     ResultPoints: -3
   - Text: "Look, I know a few years ago you thought these new flats would help fix
       the housing problem, but it hasn\u2019t\u2026 The Location Value Tax would
-      tax HousingCorp \U0001F3D7\u2122 for having all these empty luxury builds,
+      tax HousingCorp <sprite=0>\u2122 for having all these empty luxury builds,
       give it directly to people who need it, and reward more housing-efficient landlords\u2026
       like yourself."
     Flag: 

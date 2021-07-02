@@ -243,6 +243,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1766890044122170839, guid: e872ef6aea91629c895508a9342d5430,
+        type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5221c44417fb4804298076cf451007f0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e872ef6aea91629c895508a9342d5430, type: 3}
 --- !u!224 &129709670 stripped
@@ -314,15 +320,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 648e778d5732fd6629e397401d249650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArtGroups:
-  - {fileID: 1806474360}
-  - {fileID: 295916122}
-  - {fileID: 953488440}
   ArtTransitions:
   - {fileID: 1806474361}
   - {fileID: 295916123}
   - {fileID: 953488441}
-  FadeTime: 0.33
 --- !u!1001 &222213296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -455,6 +456,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1766890044122170839, guid: e872ef6aea91629c895508a9342d5430,
+        type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5221c44417fb4804298076cf451007f0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e872ef6aea91629c895508a9342d5430, type: 3}
 --- !u!114 &222213297 stripped
@@ -2700,6 +2707,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1766890044122170839, guid: e872ef6aea91629c895508a9342d5430,
+        type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5221c44417fb4804298076cf451007f0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e872ef6aea91629c895508a9342d5430, type: 3}
 --- !u!114 &1582861842 stripped
@@ -3086,6 +3099,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1766890044122170839, guid: e872ef6aea91629c895508a9342d5430,
+        type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5221c44417fb4804298076cf451007f0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e872ef6aea91629c895508a9342d5430, type: 3}
 --- !u!114 &1847134054 stripped
@@ -3660,6 +3679,12 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1766890044122170839, guid: e872ef6aea91629c895508a9342d5430,
+        type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5221c44417fb4804298076cf451007f0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e872ef6aea91629c895508a9342d5430, type: 3}
 --- !u!1001 &7471955016034657118
