@@ -9,6 +9,7 @@ public class SceneLoader : ScriptableObject
 {
     private static readonly int SCENE_1_INDEX = 0;
     private static readonly int SCENE_7_INDEX = 8;
+    private static readonly int SCENE_10a_INDEX = 13;
     
     private int NumScenes;
     private int CurrentScene;
@@ -40,11 +41,22 @@ public class SceneLoader : ScriptableObject
         if (CurrentScene == SCENE_1_INDEX)
         {
             ScoreManager.Instance.Zero();
+            DialogueManager.Instance.ClearFlags();
         }
         
         if (CurrentScene == SCENE_7_INDEX && DialogueManager.Instance.GetFlag("BONUS"))
         {
             CurrentScene = SCENE_7_INDEX + 1;
+        }
+                
+        if (CurrentScene == SCENE_10a_INDEX)
+        {
+            bool protest = DialogueManager.Instance.GetFlag("P");
+
+            if (!ScoreManager.Instance.MetWinCriteria(protest))
+            {
+                CurrentScene = SCENE_10a_INDEX + 1;
+            }
         }
         
         if (CurrentScene < NumScenes)

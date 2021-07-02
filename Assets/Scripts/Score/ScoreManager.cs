@@ -9,6 +9,9 @@ public class ScoreManager : MonoBehaviour
     
     public static int Score { get; private set; }
 
+    public static readonly int WIN_SCORE_PROTEST = 20;
+    public static readonly int WIN_SCORE_NO_PROTEST = 17;
+    
     private int DEBUG_Score;
 
     private void Awake()
@@ -21,15 +24,20 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    public void Add(int points)
+    {
+        Score += points;
+        DEBUG_Score = Score;
+    }
+    
     public void Zero()
     {
         Score = 0;
         DEBUG_Score = Score;
     }
-    
-    public void Add(int points)
+
+    public bool MetWinCriteria(bool protest)
     {
-        Score += points;
-        DEBUG_Score = Score;
+        return Score >= (protest ? WIN_SCORE_PROTEST : WIN_SCORE_NO_PROTEST);
     }
 }

@@ -111,7 +111,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         return Flags.Contains(flag);
-    } 
+    }
+
+    public void ClearFlags()
+    {
+        Flags.Clear();
+    }
     
     private void EndDialogue()
     {
