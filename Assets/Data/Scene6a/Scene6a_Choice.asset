@@ -15,19 +15,24 @@ MonoBehaviour:
   Options:
   - Text: Location Value Tax - Basicallyyyyy a tax system which would remove all
       landlords
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: 4cd95d132683a92439cc10e21a5a2270, type: 2}
     ResultPoints: -1
   - Text: Location Value Tax - A tax system on land which rewards an efficient use
       of land that houses many people, and punishes the owners of land that is largely
       unoccupied. It stops the speculative land hoarding that prevents homes from
       being built.
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: 4cd95d132683a92439cc10e21a5a2270, type: 2}
     ResultPoints: 1
   - Text: Location Value Tax - EAT THE LANDLORDS, EAT THE RICH
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: d8f5729bfcd0594438b015cd89f8ddb4, type: 2}
     ResultPoints: -3
-  - Text: Location Value Tax - A tax system which would stop from buying up all the
-      land around here to build luxury apartments and bungalows which are half-empty.
-      It would reward smaller, more housing-efficient landlords such as yourself.
+  - Text: Location Value Tax - A tax system which would stop big developers from
+      buying up all the land around here to build luxury apartments and bungalows
+      which are half-empty. It would reward smaller, more housing-efficient landlords
+      such as yourself.
+    Flag: 
     ResultDialogue: {fileID: 11400000, guid: 4cd95d132683a92439cc10e21a5a2270, type: 2}
     ResultPoints: 3
