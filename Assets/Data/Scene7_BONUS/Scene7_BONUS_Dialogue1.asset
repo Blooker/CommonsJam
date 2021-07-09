@@ -38,7 +38,7 @@ MonoBehaviour:
   - Name: John
     Lines:
     - Text: "\"Even more homeless people around here lately. I\u2019m guessing the
-        new builds didn\u2019t help much\u2026\""
+        new-builds didn\u2019t help much\u2026\""
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 11400000, guid: a145ab1ee09cd2c48b50625c4b609e85, type: 2}
