@@ -26,7 +26,7 @@ MonoBehaviour:
     Flag: P
     ResultDialogue: {fileID: 11400000, guid: 8bc46299da725514ab94255916f30c04, type: 2}
     ResultPoints: 2
-  - Text: "These property developers have waay too much power, they need to be regulated
+  - Text: "These property developers have wayyy too much power, they need to be regulated
       so that landlords like you aren\u2019t forced out of the market!"
     Flag: P
     ResultDialogue: {fileID: 11400000, guid: 8bc46299da725514ab94255916f30c04, type: 2}
