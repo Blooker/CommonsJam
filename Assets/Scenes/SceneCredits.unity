@@ -1397,7 +1397,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -7}
-  m_SizeDelta: {x: 474.6955, y: 223.05586}
+  m_SizeDelta: {x: 606.4639, y: 223.05586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955600374352131555
 MonoBehaviour:
@@ -1523,21 +1523,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<font="Spectral-Bold SDF">Director</font> - Markela
+  m_text: '<font="Spectral-Bold SDF">Director</font> - Markela Zeneli
 
     <font="Spectral-Bold
-    SDF">Lead Developer</font> - Evan
+    SDF">Lead Developer</font> - Evan Griffiths
 
-    <font="Spectral-Bold SDF">Lead Researcher</font>
-    - Ricardo
+    <font="Spectral-Bold SDF">Lead
+    Researcher</font> - Ricardo Teixeira-Mendes
 
-    <font="Spectral-Bold SDF">Assistant Researchers</font> - Ron,
-    Carmen
+    <font="Spectral-Bold SDF">Assistant
+    Researchers</font> - Ronique Hossain, Carmen Ho
 
-    <font="Spectral-Bold SDF">Audiovisual Design</font> - Carmen
+    <font="Spectral-Bold SDF">Audiovisual
+    Design</font> - Carmen Ho
 
-    <font="Spectral-Bold
-    SDF">Writers</font> - Markela, Ron'
+    <font="Spectral-Bold SDF">Writers</font> - Markela
+    Zeneli, Ronique Hossain'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 73360fe52d12dc805af7bd82dccae2a3, type: 2}
   m_sharedMaterial: {fileID: 287396946750149961, guid: 73360fe52d12dc805af7bd82dccae2a3,
