@@ -9,8 +9,8 @@ public class ScoreManager : MonoBehaviour
     
     public static int Score { get; private set; }
 
-    public static readonly int WIN_SCORE_PROTEST = 20;
-    public static readonly int WIN_SCORE_NO_PROTEST = 17;
+    public static readonly int WIN_SCORE_PROTEST = 15;
+    public static readonly int WIN_SCORE_NO_PROTEST = 11;
     
     private int DEBUG_Score;
 
