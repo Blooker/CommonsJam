@@ -22,7 +22,7 @@ MonoBehaviour:
     ResultDialogue: {fileID: 11400000, guid: 43558b19e2636c24a8275d9ec291e51c, type: 2}
     ResultPoints: -3
   - Text: "Hey! You voting for Julia Green? Seems like the perfect way to get back
-      at the greedy HousingCorp\U0001F3D7\u2122 property developers, and level out
+      at the greedy HousingCorp <sprite=0>\u2122 property developers, and level out
       the market for smaller developers like you!"
     Flag: 
     ResultDialogue: {fileID: 11400000, guid: 43558b19e2636c24a8275d9ec291e51c, type: 2}

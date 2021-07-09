@@ -41,7 +41,7 @@ MonoBehaviour:
       Audio: {fileID: 0}
   - Name: John
     Lines:
-    - Text: '"Loads of homeless people around here lately, hopefully these new builds
+    - Text: '"Loads of homeless people around here lately, hopefully these new-builds
         will help somewhat..."'
       ArtIndex: -1
       Audio: {fileID: 0}

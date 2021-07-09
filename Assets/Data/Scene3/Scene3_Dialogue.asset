@@ -22,7 +22,7 @@ MonoBehaviour:
     - Text: "You think to yourself\u2026 \u201CIs supply the only problem here\u2026?\u201D"
       ArtIndex: 1
       Audio: {fileID: 0}
-    - Text: "\u201C\u2026 hopefully these new builds will help somewhat...\u201D"
+    - Text: "\u201C\u2026 hopefully these new-builds will help somewhat...\u201D"
       ArtIndex: -1
       Audio: {fileID: 0}
   NextChoice: {fileID: 0}
